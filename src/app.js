@@ -9,7 +9,7 @@ const app = express();
 app.use(cors({
   origin: [
     'http://localhost:3000',
-    'https://laboratorio-15-frontend-marketplace.vercel.app'
+    'https://frontend-marketplace-delta-rust.vercel.app'
   ],
   credentials: true
 }));
