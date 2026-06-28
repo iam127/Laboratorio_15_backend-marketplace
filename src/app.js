@@ -6,7 +6,14 @@ const categoriesRouter = require('./routes/categories');
 
 const app = express();
 
-app.use(cors());
+app.use(cors({
+  origin: [
+    'http://localhost:3000',
+    'https://laboratorio-15-frontend-marketplace.vercel.app'
+  ],
+  credentials: true
+}));
+
 app.use(express.json());
 
 app.use('/api/auth', authRouter);
